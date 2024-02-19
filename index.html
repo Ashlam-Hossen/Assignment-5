@@ -111,7 +111,7 @@
                     </div>     
                     
                     <div class="card lg:card-side  lg:w-[300px] bg-yellow-400">
-                      <img src="images/cupon-devider.png">
+                      <img src="images/cupon-devider.png ">
                     <div class="card-body">
                       <h1 class="card-title text-5xl bloder">NEW<sub>15</sub></h1>
                       <p class=" text-xl bloder">Coupon Code</p>
@@ -131,7 +131,7 @@
 
 
              <!------------ paribahan-sections-area------------------>
-             <section class="paribahan mt-10 w-[90%] mx-auto mb-10">
+             <section class="paribahan mt-10 w-[90%] mx-auto mb-10 flex-col">
               <div class="text-center mb-12 ">
                 <h1 class="text-4xl font-extrabold mb-6">Econo Paribahan</h1>
                 <p>Yes, you can run unit tests and view the results directly within the app. <br>The integrated testing features allow for a streamlined .</p>
@@ -210,12 +210,12 @@
 
               <!---------------- Select-seat-area ---------------------->
 
-              <section class="Select-seat-area w-[90%] mx-auto mt-20 mb-20">
+              <section class="Select-seat-area w-[90%] mx-auto mt-20 mb-20 flex-col">
                  <div class="select-seat-all flex justify-between gap-10">
-                   <div class="select-seat-right w-[50%]">
+                   <div class="select-seat-right lg:w-[50%]">
                      <h1 class="text-xl from-neutral-950  border-b-2 py-5 font-bold">Select Your Seat</h1>
 
-                       <div class="select-box flex justify-between mt-10 border-b-2 mb-10 py-5">
+                       <div class="select-box flex justify-between mt-10 border-b-2 mb-10 py-5 flex-col">
                          <p>Available</p>
                           <div class="select-box-img flex">
                             <span><img src="images/seat-green-filled.png" alt=""></span>
@@ -224,11 +224,11 @@
                        </div>
                        
                        <div class="driving-seat-area">
-                       <span><img src="images/2087.png" alt="" class="w-10 ml-[480px]"></span>
+                       <span><img src="images/2087.png" alt="" class="w-10 lg:ml-[480px]"></span>
 
                         <div class="driving-seat mt-10 flex">
 
-                           <div class="driving-set-left w-[50%]">
+                           <div class="driving-set-left lg:w-[50%]">
                          
                             <div class="">
                               <table class="table">
@@ -290,7 +290,7 @@
                             </div>
                            </div>
 
-                           <div class="driving-seat-right w-[50%]">
+                           <div class="driving-seat-right lg:w-[50%]">
                             <div class="">
                               <table class="table">
                                 <!-- head -->
@@ -355,7 +355,7 @@
                    </div>
 
 
-                   <div class="select-seat-left w-[50%]">
+                   <div class="select-seat-left lg:w-[50%] ">
                       <div class="select-box-left">
                         <h1 class="text-xl from-neutral-950 border-b-1 font-bold">Select Your Seat</h1>
 
@@ -395,9 +395,13 @@
 
                               <tr>
                               
-                                <td><label class="input input-bordered flex items-center gap-2">
-                                  <input type="text" class="grow" placeholder="Have any copupon?" />
-                                  <button class="badge bg-[#1CCD00] text-white p-5">Apply</button>
+                                <td>
+                                  <form action="get">
+                                    <label class="input input-bordered flex items-center gap-2">
+                                      <input type="text" class="grow" placeholder="Have any copupon?" />
+                                      <button class="badge bg-[#1CCD00] text-white p-5">Apply</button>
+                                  </form>
+                                 
                                 </label></td>
                                
                               </tr>
@@ -418,36 +422,36 @@
 
                       <!--select-seat-left iput-form  -->
                        <div class="select-seat-left-input mt-10">
-
-                        <label class="form-control w-full max-w-xs">
-                          <div class="label">
-                            <span class="label-text font-extrabold">What is your name*</span>
-                          </div>
-                          <input type="text" placeholder="Enter Your Name" class="input input-bordered w-full max-w-xs"required/>
-                          <div class="label">
-                          </div>
-                        </label>
-                        <label class="form-control w-full max-w-xs">
-                          <div class="label">
-                            <span class="label-text font-extrabold"> Phone Number*</span>
-                          </div>
-                          <input type="text" placeholder="Enter Your Number" class="input input-bordered w-full max-w-xs"required/>
-                          <div class="label">
-                          </div>
-                        </label>
-
-                        <label class="form-control w-full max-w-xs">
-                          <div class="label">
-                            <span class="label-text font-extrabold">Email ID</span>
-                          </div>
-                          <input type="email" placeholder="Enter Your Email" class="input input-bordered w-full max-w-xs"required/>
-                          <div class="label">
-                          </div>
-                        </label>
-
-                       
-                         <button class="btn form-control w-full max-w-xs bg-[#1CCD00] text-white font-extrabold">Next</button>
-
+                        <form action="">
+                          <label class="form-control w-full max-w-xs">
+                            <div class="label">
+                              <span class="label-text font-extrabold">What is your name*</span>
+                            </div>
+                            <input type="text" placeholder="Enter Your Name" class="input input-bordered w-full max-w-xs"required/>
+                            <div class="label">
+                            </div>
+                          </label>
+                          <label class="form-control w-full max-w-xs">
+                            <div class="label">
+                              <span class="label-text font-extrabold required"> Phone Number*</span>
+                            </div>
+                            <input type="text" placeholder="Enter Your Number" class="input input-bordered w-full max-w-xs"required/>
+                            <div class="label">
+                            </div>
+                          </label>
+  
+                          <label class="form-control w-full max-w-xs">
+                            <div class="label">
+                              <span class="label-text font-extrabold">Email ID</span>
+                            </div>
+                            <input type="email" placeholder="Enter Your Email" class="input input-bordered w-full max-w-xs"required/>
+                            <div class="label">
+                            </div>
+                          </label>
+  
+                         
+                           <button class="btn form-control w-full max-w-xs bg-[#1CCD00] text-white font-extrabold">Next</button>
+                      </form>
                        </div>
                    </div>
                 </div>
